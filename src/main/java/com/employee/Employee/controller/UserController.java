@@ -21,10 +21,13 @@ import com.employee.Employee.service.UserService;
 @RequestMapping("/api")
 public class UserController
 {
+	
 	@Autowired
 	private UserService userService;  
 	/*
 	 * GetAll User list
+	 * 
+	 * 
 	 */
 	@GetMapping("/getUser")
 	public List<User> getEmployees()
